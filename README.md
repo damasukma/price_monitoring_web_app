@@ -1,6 +1,6 @@
 ## Documentation
 
-### Installation
+### Installation Manual
 
 1. Clone the repo
    ```sh
@@ -82,5 +82,10 @@
    php artisan serve
    ```
 
+8. Run the Job Queue
+* make sure the application is running,  you can run it by opening a new terminal and typing the command
+    ```sh
+    php artisan schedule:work
+    ```
 
    
