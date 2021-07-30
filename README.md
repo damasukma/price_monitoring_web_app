@@ -81,8 +81,8 @@
    ```sh
    php artisan serve
    ```
-
-8. Run the Job Queue
+8. set redis in .env (because job queue running depends on redis)
+9. Run the Job Queue
 * make sure the application is running,  you can run it by opening a new terminal and typing the command
     ```sh
     php artisan schedule:work
