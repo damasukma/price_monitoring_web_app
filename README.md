@@ -77,15 +77,18 @@
    ```sh
    php artisan migrate
    ```
-7. and run the server
+   
+7. set redis in .env (because job queue running depends on redis) 
+* run the server
    ```sh
-   php artisan serve
+   php artisan serve 
    ```
-8. set redis in .env (because job queue running depends on redis)
-9. Run the Job Queue
 * make sure the application is running,  you can run it by opening a new terminal and typing the command
     ```sh
     php artisan schedule:work
     ```
-
+* or (if you run the command start.sh then you don't need to run the command artisan serve and schedule:work)
+   ```sh
+   sh ./start.sh
+   ```
    
